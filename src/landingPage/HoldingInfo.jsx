@@ -8,9 +8,11 @@ function HoldingInfo() {
   const [holdings, setHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/showAllheadings").then((res) => {
-      setHoldings(res.data);
-    });
+    axios
+      .get("https://tradoxil-backend.onrender.com/showAllheadings")
+      .then((res) => {
+        setHoldings(res.data);
+      });
   }, []);
 
   const labels = holdings.map((holding) => holding.name);

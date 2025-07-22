@@ -5,9 +5,11 @@ function Orders() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/showAllorders").then((res) => {
-      setOrders(res.data);
-    });
+    axios
+      .get("https://tradoxil-backend.onrender.com/showAllorders")
+      .then((res) => {
+        setOrders(res.data);
+      });
   }, []);
 
   return (

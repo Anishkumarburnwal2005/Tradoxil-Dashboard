@@ -5,9 +5,11 @@ function Positions() {
   const [positions, setPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/showAllpositions").then((res) => {
-      setPositions(res.data);
-    });
+    axios
+      .get("https://tradoxil-backend.onrender.com/showAllpositions")
+      .then((res) => {
+        setPositions(res.data);
+      });
   }, []);
 
   return (
