@@ -6,7 +6,7 @@ export default function Decider({ uid }) {
   let [price, setPrice] = useState();
 
   async function stockBuy() {
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://tradoxil-backend.onrender.com/newOrder", {
       name: uid,
       qty: quantity,
       price: price,
