@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Summary from "./Summary";
 import Orders from "./Orders";
@@ -11,30 +11,13 @@ function Dashboard() {
   return (
     <>
       <Menu />
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="https://tradoxil-dashboard.onrender.com"
-            element={<Summary />}
-          />
-          <Route
-            path="https://tradoxil-dashboard.onrender.com/orders"
-            element={<Orders />}
-          />
-          <Route
-            path="https://tradoxil-dashboard.onrender.com/holdings"
-            element={<HoldingInfo />}
-          />
-          <Route
-            path="https://tradoxil-dashboard.onrender.com/positions"
-            element={<Positions />}
-          />
-          <Route
-            path="https://tradoxil-dashboard.onrender.com/funds"
-            element={<Funds />}
-          />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Summary />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/holdings" element={<HoldingInfo />} />
+        <Route path="/positions" element={<Positions />} />
+        <Route path="/funds" element={<Funds />} />
+      </Routes>
     </>
   );
 }
