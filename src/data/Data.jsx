@@ -191,3 +191,80 @@ export const positions = [
     isLoss: true,
   },
 ];
+
+//Funds
+
+export const funds = [
+  {
+    name: "INFY",
+    LTP: 1555.45,
+    change: -1.6,
+    Quantity: 15,
+    Investment: 23711,
+    PL: -379.5,
+  },
+  {
+    name: "ONGC",
+    LTP: 116.8,
+    change: -0.09,
+    Quantity: 100,
+    Investment: 11691,
+    PL: -11.8,
+  },
+  {
+    name: "TCS",
+    LTP: 3194.8,
+    change: -0.25,
+    Quantity: 5,
+    Investment: 16014,
+    PL: -40.0,
+  },
+  {
+    name: "KPITTECH",
+    LTP: 266.45,
+    change: 3.45,
+    Quantity: 40,
+    Investment: 10294,
+    PL: 364.0,
+  },
+  {
+    name: "QUICKHEAL",
+    LTP: 308.55,
+    change: -0.15,
+    Quantity: 35,
+    Investment: 10815,
+    PL: -15.75,
+  },
+  {
+    name: "WIPRO",
+    LTP: 577.75,
+    change: 0.32,
+    Quantity: 30,
+    Investment: 17277,
+    PL: 55.5,
+  },
+  {
+    name: "M&M",
+    LTP: 779.8,
+    change: -0.01,
+    Quantity: 20,
+    Investment: 15598,
+    PL: -1.6,
+  },
+  {
+    name: "RELIANCE",
+    LTP: 2112.4,
+    change: 1.44,
+    Quantity: 10,
+    Investment: 20824,
+    PL: 300.0,
+  },
+  {
+    name: "HUL",
+    LTP: 2512.4,
+    change: 1.4,
+    Quantity: 8,
+    Investment: 19892,
+    PL: 207.2,
+  },
+];

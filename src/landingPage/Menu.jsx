@@ -14,8 +14,8 @@ export default function Menu() {
 
   return (
     <div className="row border-bottom">
-      <div className="col">
-        <p>Anish</p>
+      <div className="col logoImgDiv">
+        <img src="\img\tradoxilLogoImg.jpg" alt="img" className="logoImg" />
       </div>
       <div className="col">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
